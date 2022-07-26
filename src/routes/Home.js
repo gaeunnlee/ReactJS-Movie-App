@@ -1,9 +1,15 @@
 import Movie from "../components/Movie"
 import { useState, useEffect } from "react";
 
+
+
 function Home(){
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
+    useEffect(()=>{
+        if (window.location.pathname == '/public/index.html') {
+    window.location = '/'}  
+    },[])
     const getMovies = async() => {
     const json = await(
         await fetch(
