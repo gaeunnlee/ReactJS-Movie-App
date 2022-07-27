@@ -6,7 +6,7 @@ return (
     <div>
         <img src={coverImg} alt={title}/>
         <h2>
-            <Link to={`/ReactJS-Movie-App/movie/${id}`}>
+            <Link to={`/movie/${id}`}>
                 {title}
             </Link>
         </h2>

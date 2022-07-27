@@ -10,10 +10,8 @@ import {
 function App() {
   return <Router>
     <Routes>
-      <Route path="/ReactJS-Movie-App/movie/:id" element={<Detail/>}></Route>
-      <Route path="/ReactJS-Movie-App/public/index.html" element={<Home/>}></Route>
-      <Route path="/ReactJS-Movie-App/home" element={<Home/>}></Route>
-      <Route path="/ReactJS-Movie-App" element={<Home/>}></Route>
+      <Route path="/movie/:id" element={<Detail/>}></Route>
+      <Route path="/" element={<Home/>}></Route>
     </Routes>
   </Router>
 }

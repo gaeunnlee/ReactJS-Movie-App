@@ -6,12 +6,6 @@ import { useState, useEffect } from "react";
 function Home(){
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
-    useEffect(()=>{
-        if (window.location.pathname === '/ReactJS-Movie-App/public/index.html' ||
-            window.location.pathname === '/ReactJS-Movie-App/' ||
-            window.location.pathname === '/ReactJS-Movie-App') {
-    window.location.pathname = '/ReactJS-Movie-App/home'}  
-    },[])
     const getMovies = async() => {
     const json = await(
         await fetch(
