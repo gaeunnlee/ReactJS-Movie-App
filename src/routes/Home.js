@@ -7,8 +7,8 @@ function Home(){
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
     useEffect(()=>{
-        if (window.location.pathname == '/public/index.html') {
-    window.location = '/'}  
+        if (window.location.pathname === '/public/index.html') {
+    window.location.pathname = '/home'}  
     },[])
     const getMovies = async() => {
     const json = await(
